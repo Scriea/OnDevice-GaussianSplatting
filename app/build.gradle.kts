@@ -16,7 +16,6 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags += "-std=c++17"
-                arguments += "-GUnix Makefiles"
             }
         }
     }
@@ -36,6 +35,9 @@ android {
             path = file("src/main/CMakeLists.txt")
             version = "3.22.1"
         }
+    }
+    buildFeatures {
+        viewBinding = false
     }
 }
 

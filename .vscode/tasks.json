@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Assemble Debug (no config cache)",
+			"type": "shell",
+			"command": "./gradlew :app:assembleDebug --no-daemon --no-configuration-cache",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
